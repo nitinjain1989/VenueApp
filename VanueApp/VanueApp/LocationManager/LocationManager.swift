@@ -44,18 +44,6 @@ extension LocationManager: CLLocationManagerDelegate {
     //Handle the location information
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         print("locations:\(locations)")
-        if let location = locations.first{
-            
-            print("altitude: \(location.altitude)")
-            print("floor level: \(location.floor?.level)")
-            print("horizontalAccuracy: \(location.horizontalAccuracy)")
-            print("verticalAccuracy: \(location.verticalAccuracy)")
-            print("speedAccuracy: \(location.speedAccuracy)")
-            print("speed: \(location.speed)")
-            print("timestamp: \(location.timestamp)")
-            print("courseAccuracy: \(location.courseAccuracy)")
-            print("course: \(location.course)")
-        }
     }
     //Invoked when an error has occurred
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
