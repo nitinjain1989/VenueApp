@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94E474D82B12147A00F0585E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474D72B12147A00F0585E /* AppDelegate.swift */; };
+		94E474DA2B12147A00F0585E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474D92B12147A00F0585E /* SceneDelegate.swift */; };
+		94E474DC2B12147A00F0585E /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474DB2B12147A00F0585E /* VenueViewController.swift */; };
+		94E474E22B12147A00F0585E /* VanueApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94E474E02B12147A00F0585E /* VanueApp.xcdatamodeld */; };
+		94E474E42B12147C00F0585E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E474E32B12147C00F0585E /* Assets.xcassets */; };
+		94E474E72B12147C00F0585E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E474E52B12147C00F0585E /* LaunchScreen.storyboard */; };
+		94E474F02B1214F500F0585E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474EF2B1214F500F0585E /* APIService.swift */; };
+		94E474F22B12151D00F0585E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474F12B12151D00F0585E /* Parser.swift */; };
+		94E474F42B12155000F0585E /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474F32B12155000F0585E /* APIEndPoint.swift */; };
+		94E474F62B12157800F0585E /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474F52B12157800F0585E /* NetworkConstant.swift */; };
+		94E474F82B1215B300F0585E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474F72B1215B300F0585E /* Request.swift */; };
+		94E474FA2B1215E100F0585E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474F92B1215E100F0585E /* HTTPMethod.swift */; };
+		94E474FC2B12167B00F0585E /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474FB2B12167B00F0585E /* NetworkSession.swift */; };
+		94E474FE2B12169100F0585E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E474FD2B12169100F0585E /* NetworkError.swift */; };
+		94E475032B1217EC00F0585E /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E475022B1217EC00F0585E /* VenueViewModel.swift */; };
+		94E475062B12182800F0585E /* VenueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E475052B12182800F0585E /* VenueService.swift */; };
+		94E475092B121BFC00F0585E /* VenueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E475082B121BFC00F0585E /* VenueModel.swift */; };
+		94E4750C2B121CCD00F0585E /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4750B2B121CCD00F0585E /* VenueTableViewCell.swift */; };
+		94E4750E2B121DBD00F0585E /* VenueCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E4750D2B121DBD00F0585E /* VenueCellModel.swift */; };
+		94E475112B122A0000F0585E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E475102B122A0000F0585E /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		94E474D42B12147A00F0585E /* VanueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VanueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E474D72B12147A00F0585E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94E474D92B12147A00F0585E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		94E474DB2B12147A00F0585E /* VenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
+		94E474E12B12147A00F0585E /* VanueApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VanueApp.xcdatamodel; sourceTree = "<group>"; };
+		94E474E32B12147C00F0585E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94E474E62B12147C00F0585E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94E474E82B12147C00F0585E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E474EF2B1214F500F0585E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		94E474F12B12151D00F0585E /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		94E474F32B12155000F0585E /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		94E474F52B12157800F0585E /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		94E474F72B1215B300F0585E /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		94E474F92B1215E100F0585E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		94E474FB2B12167B00F0585E /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		94E474FD2B12169100F0585E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		94E475022B1217EC00F0585E /* VenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
+		94E475052B12182800F0585E /* VenueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueService.swift; sourceTree = "<group>"; };
+		94E475082B121BFC00F0585E /* VenueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueModel.swift; sourceTree = "<group>"; };
+		94E4750B2B121CCD00F0585E /* VenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		94E4750D2B121DBD00F0585E /* VenueCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCellModel.swift; sourceTree = "<group>"; };
+		94E475102B122A0000F0585E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94E474D12B12147A00F0585E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94E474CB2B12147A00F0585E = {
+			isa = PBXGroup;
+			children = (
+				94E474D62B12147A00F0585E /* VanueApp */,
+				94E474D52B12147A00F0585E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94E474D52B12147A00F0585E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94E474D42B12147A00F0585E /* VanueApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94E474D62B12147A00F0585E /* VanueApp */ = {
+			isa = PBXGroup;
+			children = (
+				94E4750F2B1229F000F0585E /* LocationManager */,
+				94E4750A2B121CBB00F0585E /* Cells */,
+				94E475072B121BCF00F0585E /* Models */,
+				94E475042B12180C00F0585E /* Service */,
+				94E475002B12173D00F0585E /* ViewModel */,
+				94E474FF2B12173600F0585E /* ViewController */,
+				94E474EE2B1214DE00F0585E /* Network */,
+				94E474D72B12147A00F0585E /* AppDelegate.swift */,
+				94E474D92B12147A00F0585E /* SceneDelegate.swift */,
+				94E474E32B12147C00F0585E /* Assets.xcassets */,
+				94E474E52B12147C00F0585E /* LaunchScreen.storyboard */,
+				94E474E82B12147C00F0585E /* Info.plist */,
+				94E474E02B12147A00F0585E /* VanueApp.xcdatamodeld */,
+			);
+			path = VanueApp;
+			sourceTree = "<group>";
+		};
+		94E474EE2B1214DE00F0585E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				94E474EF2B1214F500F0585E /* APIService.swift */,
+				94E474F12B12151D00F0585E /* Parser.swift */,
+				94E474F32B12155000F0585E /* APIEndPoint.swift */,
+				94E474F52B12157800F0585E /* NetworkConstant.swift */,
+				94E474F72B1215B300F0585E /* Request.swift */,
+				94E474F92B1215E100F0585E /* HTTPMethod.swift */,
+				94E474FB2B12167B00F0585E /* NetworkSession.swift */,
+				94E474FD2B12169100F0585E /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		94E474FF2B12173600F0585E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				94E474DB2B12147A00F0585E /* VenueViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		94E475002B12173D00F0585E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				94E475022B1217EC00F0585E /* VenueViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		94E475042B12180C00F0585E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				94E475052B12182800F0585E /* VenueService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		94E475072B121BCF00F0585E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94E475082B121BFC00F0585E /* VenueModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94E4750A2B121CBB00F0585E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				94E4750B2B121CCD00F0585E /* VenueTableViewCell.swift */,
+				94E4750D2B121DBD00F0585E /* VenueCellModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		94E4750F2B1229F000F0585E /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				94E475102B122A0000F0585E /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94E474D32B12147A00F0585E /* VanueApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E474EB2B12147C00F0585E /* Build configuration list for PBXNativeTarget "VanueApp" */;
+			buildPhases = (
+				94E474D02B12147A00F0585E /* Sources */,
+				94E474D12B12147A00F0585E /* Frameworks */,
+				94E474D22B12147A00F0585E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VanueApp;
+			productName = VanueApp;
+			productReference = 94E474D42B12147A00F0585E /* VanueApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94E474CC2B12147A00F0585E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					94E474D32B12147A00F0585E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 94E474CF2B12147A00F0585E /* Build configuration list for PBXProject "VanueApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94E474CB2B12147A00F0585E;
+			productRefGroup = 94E474D52B12147A00F0585E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94E474D32B12147A00F0585E /* VanueApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94E474D22B12147A00F0585E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E474E72B12147C00F0585E /* LaunchScreen.storyboard in Resources */,
+				94E474E42B12147C00F0585E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94E474D02B12147A00F0585E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E474DC2B12147A00F0585E /* VenueViewController.swift in Sources */,
+				94E475032B1217EC00F0585E /* VenueViewModel.swift in Sources */,
+				94E474F02B1214F500F0585E /* APIService.swift in Sources */,
+				94E474F22B12151D00F0585E /* Parser.swift in Sources */,
+				94E474FC2B12167B00F0585E /* NetworkSession.swift in Sources */,
+				94E474E22B12147A00F0585E /* VanueApp.xcdatamodeld in Sources */,
+				94E474F62B12157800F0585E /* NetworkConstant.swift in Sources */,
+				94E474D82B12147A00F0585E /* AppDelegate.swift in Sources */,
+				94E475112B122A0000F0585E /* LocationManager.swift in Sources */,
+				94E474DA2B12147A00F0585E /* SceneDelegate.swift in Sources */,
+				94E4750C2B121CCD00F0585E /* VenueTableViewCell.swift in Sources */,
+				94E474F82B1215B300F0585E /* Request.swift in Sources */,
+				94E4750E2B121DBD00F0585E /* VenueCellModel.swift in Sources */,
+				94E474FE2B12169100F0585E /* NetworkError.swift in Sources */,
+				94E474FA2B1215E100F0585E /* HTTPMethod.swift in Sources */,
+				94E475092B121BFC00F0585E /* VenueModel.swift in Sources */,
+				94E474F42B12155000F0585E /* APIEndPoint.swift in Sources */,
+				94E475062B12182800F0585E /* VenueService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		94E474E52B12147C00F0585E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94E474E62B12147C00F0585E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94E474E92B12147C00F0585E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94E474EA2B12147C00F0585E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94E474EC2B12147C00F0585E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7WV6R6Z8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VanueApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.VanueApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94E474ED2B12147C00F0585E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7WV6R6Z8P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VanueApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abc.VanueApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94E474CF2B12147A00F0585E /* Build configuration list for PBXProject "VanueApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E474E92B12147C00F0585E /* Debug */,
+				94E474EA2B12147C00F0585E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94E474EB2B12147C00F0585E /* Build configuration list for PBXNativeTarget "VanueApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94E474EC2B12147C00F0585E /* Debug */,
+				94E474ED2B12147C00F0585E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		94E474E02B12147A00F0585E /* VanueApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				94E474E12B12147A00F0585E /* VanueApp.xcdatamodel */,
+			);
+			currentVersion = 94E474E12B12147A00F0585E /* VanueApp.xcdatamodel */;
+			path = VanueApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 94E474CC2B12147A00F0585E /* Project object */;
+}
